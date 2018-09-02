@@ -10,7 +10,7 @@ set(CMAKE_INSTALL_PREFIX "${CMAKE_CURRENT_LIST_DIR}/bin")
 set(Boost_USE_STATIC_LIBS ON)
 set(Boost_USE_STATIC_RUNTIME OFF)
 set(Boost_USE_MULTITHREADED ON)
-find_package(Boost 1.67.0 COMPONENTS system filesystem REQUIRED)
+find_package(Boost 1.67.0 COMPONENTS system filesystem unit_test_framework REQUIRED)
 include_directories(${Boost_INCLUDE_DIRS})
 
 include_directories("dsa")
@@ -22,8 +22,9 @@ add_library(dsa STATIC ${DS_SRC} ${ALG_SRC})
 # todo: add_subdirectory(proj_lib)
 
 # tests
-file(GLOB TEST_SRC "./tests/*.cpp" "./tests/*.hpp")
-add_executable(tests ${TEST_SRC})
+file(GLOB TEST_DS_SRC "./tests/data_structures/*.cpp" "./tests/data_structures/*.hpp")
+file(GLOB TEST_ALG_SRC "./tests/algorithms/*.cpp" "./tests/algorithms/*.hpp")
+add_executable(tests ${TEST_ALG_SRC} ${TEST_DS_SRC})
 target_link_libraries(tests dsa ${Boost_LIBRARIES})
 
 # output
