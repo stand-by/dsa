@@ -16,16 +16,8 @@ include_directories(${Boost_INCLUDE_DIRS})
 include_directories("dsa")
 
 # main project
-file(GLOB DS_SRC "dsa/data_structures/*.cpp" "dsa/data_structures/*.hpp")
-file(GLOB ALG_SRC "dsa/algorithms/*.cpp" "dsa/algorithms/*.hpp")
-add_library(dsa STATIC ${DS_SRC} ${ALG_SRC})
-# todo: add_subdirectory(proj_lib)
+add_subdirectory(dsa)
 
 # tests
-file(GLOB TEST_DS_SRC "./tests/data_structures/*.cpp" "./tests/data_structures/*.hpp")
-file(GLOB TEST_ALG_SRC "./tests/algorithms/*.cpp" "./tests/algorithms/*.hpp")
-add_executable(tests ${TEST_ALG_SRC} ${TEST_DS_SRC})
-target_link_libraries(tests dsa ${Boost_LIBRARIES})
-
-# output
-install(TARGETS tests DESTINATION .)
+add_subdirectory(tests/data_structures)
+add_subdirectory(tests/algorithms)
