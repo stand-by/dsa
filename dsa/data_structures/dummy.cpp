@@ -1,4 +1,4 @@
 namespace dsa
 {
-	typedef int integer;
+    typedef int integer;
 }

@@ -15,7 +15,7 @@ BOOST_AUTO_TEST_CASE(use_case)
     BOOST_CHECK(arr33 == arr3);
 
     for(auto& e: arr)
-    	BOOST_CHECK(e == 0);
+        BOOST_CHECK(e == 0);
     BOOST_CHECK(arr3[0] == 1);
     BOOST_CHECK(arr3[1] == 2);
     BOOST_CHECK(arr3[2] == 3);
@@ -25,10 +25,10 @@ BOOST_AUTO_TEST_CASE(use_case)
 
     arr33 = arr;
     for(auto& e: arr33)
-    	BOOST_CHECK(e == 0);
+        BOOST_CHECK(e == 0);
     BOOST_CHECK(arr33 != arr3);
     BOOST_CHECK(arr33 == arr);
-		
+        
     BOOST_CHECK(arr33.data() != arr.data());
     BOOST_CHECK(arr33.data() != arr3.data());
     BOOST_CHECK(arr3.data() == &arr3[0]);
@@ -42,7 +42,7 @@ BOOST_AUTO_TEST_CASE(use_case)
 
     arr33.fill(42);
     for(auto& e: arr33)
-    	BOOST_CHECK(e == 42);
+        BOOST_CHECK(e == 42);
 }
 
 BOOST_AUTO_TEST_SUITE_END()

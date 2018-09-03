@@ -9,13 +9,13 @@
 
 namespace dsa
 {
-	namespace algorithms {};
-	namespace data_structures {};
-	namespace utilities {};
+    namespace algorithms {};
+    namespace data_structures {};
+    namespace utilities {};
 
-	namespace algos =  dsa::algorithms;
-	namespace structs =  dsa::data_structures;
-	namespace utils = dsa::utilities;
+    namespace algos =  dsa::algorithms;
+    namespace structs =  dsa::data_structures;
+    namespace utils = dsa::utilities;
 
     namespace config
     {
