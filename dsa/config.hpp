@@ -2,9 +2,12 @@
 
 #include <initializer_list>
 #include <stdexcept>
-#include <string>
+
+#include <algorithm>
+#include <numeric>
 
 #include <vector>
+#include <string>
 #include <map>
 
 namespace dsa
