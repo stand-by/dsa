@@ -10,6 +10,7 @@ namespace dsa
         template <typename T>
         class vector 
         {
+            static_assert(std::is_pod<T>::value, "vector logic can handle only POD types");
         public:
 
             vector(): memory_block(nullptr), capacity(0), length(0) {}
@@ -142,11 +143,8 @@ namespace dsa
             }
 
             void reverse() {
-                for(int i=0, len=length; i < (len/2); ++i) {
-                    T temp = memory_block[i];
-                    memory_block[i] = memory_block[len-1-i];
-                    memory_block[len-1-i] = temp;
-                }
+                for(int i=0, len=length; i < (len/2); ++i)
+                    std::swap(memory_block[i], memory_block[len-1-i]);
             }
 
             void sort() {

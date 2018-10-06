@@ -99,29 +99,44 @@ namespace dsa
 
         namespace detail
         {
-            template <typename I>
-            void merge(I begin, I middle, I end)
+            template <typename I, typename IS>
+            void merge(I begin, I middle, I end, IS storage_begin)
             {
-                std::vector<typename I::value_type> sorted;
-                sorted.reserve(std::distance(begin, end));
-
                 auto left_begin = begin;
                 auto right_begin = middle;
-                while(left_begin != middle)
-                {
-                    if(*right_begin < *left_begin && right_begin != end)
-                    {
-                        sorted.emplace_back(*right_begin);
-                        ++right_begin;
-                    } else if(left_begin != middle) {
-                        sorted.emplace_back(*left_begin);
-                        ++left_begin;
-                    }
-                }
-                if(right_begin != end)
-                    sorted.emplace_back(*right_begin);
+                auto storage_it = storage_begin;
 
-                std::copy(sorted.begin(), sorted.end(), begin);
+                while(left_begin != middle && right_begin != end)
+                {
+                    if(*left_begin < *right_begin)
+                    {
+                        *storage_it = *left_begin;
+                        ++left_begin;
+                    } else {
+                        *storage_it = *right_begin;
+                        ++right_begin;
+                    }
+                    ++storage_it;
+                }
+
+                if(left_begin != middle)
+                    std::copy(left_begin, left_begin + std::distance(left_begin, middle), storage_it);
+                if(right_begin != end)
+                    std::copy(right_begin, right_begin + std::distance(right_begin, end), storage_it);
+                std::copy(storage_begin, storage_begin + std::distance(begin, end), begin);
+            }
+            template <typename I, typename IS>
+            void merge_sort_impl(I begin, I end, IS storage_begin)
+            {
+                if(begin+1 == end)
+                    return;
+
+                auto middle = begin + std::distance(begin, end) / 2;
+
+                merge_sort_impl(begin, middle, storage_begin);
+                merge_sort_impl(middle, end, storage_begin);
+
+                merge(begin, middle, end, storage_begin);
             }
         }
         template <typename I>
@@ -131,15 +146,10 @@ namespace dsa
             static_assert(std::is_base_of<std::random_access_iterator_tag, it_cat>::value,
                          "merge_sort accepts random access iterator");
 
-            if(begin+1 == end)
-                return;
+            std::vector<typename I::value_type> storage;
+            storage.resize(std::distance(begin, end));
 
-            auto middle = begin + std::distance(begin, end) / 2;
-
-            merge_sort(begin, middle);
-            merge_sort(middle, end);
-
-            detail::merge(begin, middle, end);
+            detail::merge_sort_impl(begin, end, storage.begin());
         }
 
     }

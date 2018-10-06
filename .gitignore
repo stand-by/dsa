@@ -106,6 +106,8 @@ Temporary Items
 
 # Custom
 xcode/
+cmake-build-debug/
+.idea/
 
 ### VisualStudioCode ###
 .vscode/*
