@@ -1,6 +1,7 @@
 #pragma once
 
 #include <initializer_list>
+#include <functional>
 #include <stdexcept>
 
 #include <algorithm>
