@@ -1,5 +1,6 @@
 #pragma once
 #include <config.hpp>
+#include <data_structures/heap.hpp>
 
 namespace dsa 
 {
@@ -150,6 +151,21 @@ namespace dsa
             storage.resize(std::distance(begin, end));
 
             detail::merge_sort_impl(begin, end, storage.begin());
+        }
+
+        template <typename I>
+        void heap_sort(I begin, I end)
+        {
+            using it_cat = typename std::iterator_traits<I>::iterator_category;
+            static_assert(std::is_base_of<std::forward_iterator_tag, it_cat>::value,
+                         "heap_sort accepts forward iterator");
+
+            auto h = structs::build_min_heap(begin, end);
+
+            while(!h.empty()) {
+                *begin = h.pop_top();
+                ++begin;
+            }
         }
 
     }
