@@ -22,8 +22,7 @@ namespace dsa
             }
 
             T peek() const {
-                if(list.size() == 0) 
-                    throw std::length_error("stack has zero length");
+                utils::expect(list.size() != 0, "stack has zero length");
                 return list.front();
             }
 

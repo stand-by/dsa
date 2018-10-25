@@ -22,14 +22,12 @@ namespace dsa
             }
 
             T front() const {
-                if(list.size() == 0) 
-                    throw std::length_error("queue has zero length");
+                utils::expect(list.size() != 0, "queue has zero length");
                 return list.front();
             }
 
             T back() const {
-                if(list.size() == 0) 
-                    throw std::length_error("queue has zero length");
+                utils::expect(list.size() != 0, "queue has zero length");
                 return list.back();
             }
 

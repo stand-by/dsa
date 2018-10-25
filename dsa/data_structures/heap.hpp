@@ -51,17 +51,13 @@ namespace dsa
             }
 
             T top() const {
-                if(!empty())
-                    return arr_.front();
-                else
-                    throw std::runtime_error("Cannot obtain top element of empty heap");
+                utils::expect(!empty(), "Cannot obtain top element of empty heap");
+                return arr_.front();
             }
 
             T& top() {
-                if(!empty())
-                    return arr_.front();
-                else
-                    throw std::runtime_error("Cannot obtain top element of empty heap");
+                utils::expect(!empty(), "Cannot obtain top element of empty heap");
+                return arr_.front();
             }
 
             T pop_top()
