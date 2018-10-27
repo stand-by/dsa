@@ -64,6 +64,61 @@ namespace dsa
             detail::graph_traversal_impl<container_t>(graph,traverse_func);
         }
 
+        template<typename W, typename... Args>
+        void dijkstra_shortest_path(bst::adjacency_list<Args...>& graph, const W& weight_map,
+                typename bst::adjacency_list<Args...>::vertex_descriptor source)
+        {
+            using descriptor_t = typename bst::adjacency_list<Args...>::vertex_descriptor;
+
+            auto comp = [&graph](descriptor_t left, descriptor_t right){ return graph[left].distance > graph[right].distance; };
+            std::priority_queue<descriptor_t, std::vector<descriptor_t>, decltype(comp)> min_pq{comp};
+
+            min_pq.push(source);
+            graph[min_pq.top()].distance = 0;
+
+            while(!min_pq.empty())
+            {
+                auto current = min_pq.top();
+                min_pq.pop();
+
+                if(graph[current].visited)
+                    continue;
+                else
+                    graph[current].visited = true;
+
+                for(auto [edge_it, end] = bst::out_edges(current, graph); edge_it != end; ++edge_it)
+                {
+                    auto neighbour = bst::target(*edge_it, graph);
+                    if(!graph[neighbour].visited)
+                    {
+                        auto dist = weight_map[*edge_it] + graph[current].distance;
+
+                        if (graph[neighbour].distance > dist) {
+                            graph[neighbour].distance = dist;
+                            graph[neighbour].predecessor = current;
+                            min_pq.push(neighbour);
+                        }
+                    }
+                }
+            }
+        }
+
+        template<typename... Args>
+        auto backtrace_shortest_path(const bst::adjacency_list<Args...>& graph, typename bst::adjacency_list<Args...>::vertex_descriptor endpoint)
+        {
+            std::vector<typename bst::adjacency_list<Args...>::vertex_descriptor> path;
+            auto current = endpoint;
+
+            while(graph[current].distance != 0 && graph[current].predecessor != -1)
+            {
+                path.push_back(current);
+                current = graph[current].predecessor;
+            }
+            path.push_back(current);
+
+            return path;
+        }
+
     }
 
 }

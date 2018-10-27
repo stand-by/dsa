@@ -133,4 +133,82 @@ BOOST_AUTO_TEST_CASE(test_breadth_first_traversal)
     BOOST_CHECK(res == false);
 }
 
+struct vertex_path_info
+{
+    int predecessor = -1;
+    int distance = std::numeric_limits<int>::max();
+    bool visited = false;
+};
+
+auto setup_graph_for_dijkstra()
+{
+    typedef bst::adjacency_list<bst::vecS, bst::vecS,
+                            bst::undirectedS,
+                            vertex_path_info,
+                            bst::property<boost::edge_weight_t, size_t>
+                            > graph_t;
+    graph_t g;
+
+    auto v1 = bst::add_vertex(g);
+    auto v2 = bst::add_vertex(g);
+    auto v3 = bst::add_vertex(g);
+    auto v4 = bst::add_vertex(g);
+    auto v5 = bst::add_vertex(g);
+    auto v6 = bst::add_vertex(g);
+
+    auto weightmap = get(boost::edge_weight, g);
+
+    auto e = bst::add_edge(v1,v2,g).first;
+    weightmap[e] = 1;
+    e = bst::add_edge(v1,v3,g).first;
+    weightmap[e] = 4;
+    e = bst::add_edge(v2,v3,g).first;
+    weightmap[e] = 2;
+    e = bst::add_edge(v3,v4,g).first;
+    weightmap[e] = 3;
+    e = bst::add_edge(v3,v5,g).first;
+    weightmap[e] = 6;
+    e = bst::add_edge(v3,v6,g).first;
+    weightmap[e] = 1;
+    e = bst::add_edge(v5,v6,g).first;
+    weightmap[e] = 3;
+    e = bst::add_edge(v5,v4,g).first;
+    weightmap[e] = 2;
+
+    return std::make_tuple(g, weightmap, v1);
+}
+
+BOOST_AUTO_TEST_CASE(test_dijkstra_shortest_path)
+{
+    auto [g, w, s] = setup_graph_for_dijkstra();
+
+    algos::dijkstra_shortest_path(g, w, s);
+
+    BOOST_CHECK(g[5].distance == 4);
+    BOOST_CHECK(g[4].distance == 7);
+    BOOST_CHECK(g[3].distance == 6);
+    BOOST_CHECK(g[2].distance == 3);
+    BOOST_CHECK(g[1].distance == 1);
+    BOOST_CHECK(g[0].distance == 0);
+
+    BOOST_CHECK(g[5].predecessor == 2);
+    BOOST_CHECK(g[4].predecessor == 5);
+    BOOST_CHECK(g[3].predecessor == 2);
+    BOOST_CHECK(g[2].predecessor == 1);
+    BOOST_CHECK(g[1].predecessor == 0);
+    BOOST_CHECK(g[0].predecessor == -1);
+
+    auto path2 = algos::backtrace_shortest_path(g, 2);
+    auto path3 = algos::backtrace_shortest_path(g, 3);
+    auto path4 = algos::backtrace_shortest_path(g, 4);
+    decltype(path2) true_path;
+
+    true_path = {2,1,0};
+    BOOST_CHECK(path2 == true_path);
+    true_path = {3,2,1,0};
+    BOOST_CHECK(path3 == true_path);
+    true_path = {4,5,2,1,0};
+    BOOST_CHECK(path4 == true_path);
+}
+
 BOOST_AUTO_TEST_SUITE_END()
