@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		06A357BD2DDD425BAF8DF478 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B364B8A1A3C74A85AB42A4E9 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				53B329DD9B964DA8A071A6D6 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				8330B77E727B494087611F57 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		A97E74921D33456CB0D37959 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 770C58DAB9A94830B1E1AC3F /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				B4F976255A8A4A1991BFAC06 /* CMake Rules */,
+			);
+			dependencies = (
+				53C6773C5B704A93A2DF7FAC /* PBXTargetDependency */,
+				2F6E4E3D80704584A924ECC9 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		C3CD5DF2FF1945509E4777BA /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E2F102D6A758462BBA635C59 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				58FE8BD8FECF4115B18D305C /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		110A26E6A9954AD1A356F8F1 /* /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms/test_main.cpp */ = {isa = PBXBuildFile; fileRef = 7830FBAE23F0473381C22E79 /* /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms/test_main.cpp */; };
+		1A8EEA62EB3947D193AEBC9F /* /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms/test_graph.cpp */ = {isa = PBXBuildFile; fileRef = EF79D9DF4ABA4DB1823083B8 /* /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms/test_graph.cpp */; };
+		24613500FCEC4F66B81FE1DA /* /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms/test_search.cpp */ = {isa = PBXBuildFile; fileRef = 23F5965F1C8F427797BD32B0 /* /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms/test_search.cpp */; };
+		504633A7DC104BA8B4878FBB /* /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms/test_sort.cpp */ = {isa = PBXBuildFile; fileRef = F97048AA4EE040B3BCC3CBE9 /* /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms/test_sort.cpp */; };
+		EA63974FCFF14C2CBDB2FCFC /* /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = F0990AABECA44A0F87933B93 /* /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms/CMakeLists.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		1087B49457FD4B74A45589F3 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		340D343BA3F74DC3A86375E8 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		753B6F8339C644179099C2A0 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		EC9A6EAC71944EE68C5ABCBA /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		3A743A2B3D9B413C83FA64C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 715221864D3A4B6797969E56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4B195B062AE44E7A12640E3;
+			remoteInfo = test_algorithms;
+		};
+		6B0745B39D4F4F74905D9591 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 715221864D3A4B6797969E56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3CD5DF2FF1945509E4777BA;
+			remoteInfo = ZERO_CHECK;
+		};
+		B2B970FBECAD475A99579C9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 715221864D3A4B6797969E56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A97E74921D33456CB0D37959;
+			remoteInfo = ALL_BUILD;
+		};
+		EF1806EAEE074A89A661431F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 715221864D3A4B6797969E56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3CD5DF2FF1945509E4777BA;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		23F5965F1C8F427797BD32B0 /* /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms/test_search.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_search.cpp; path = test_search.cpp; sourceTree = SOURCE_ROOT; };
+		48135605EC9C4603B44BEE50 /* test_algorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = test_algorithms; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AE988C267DA4B20BCBF5EAF /* /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		7830FBAE23F0473381C22E79 /* /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms/test_main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_main.cpp; path = test_main.cpp; sourceTree = SOURCE_ROOT; };
+		EF79D9DF4ABA4DB1823083B8 /* /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms/test_graph.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_graph.cpp; path = test_graph.cpp; sourceTree = SOURCE_ROOT; };
+		F0990AABECA44A0F87933B93 /* /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F97048AA4EE040B3BCC3CBE9 /* /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms/test_sort.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_sort.cpp; path = test_sort.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1A96A860F5924ECCA2954C2A /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF79D9DF4ABA4DB1823083B8 /* /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms/test_graph.cpp */,
+				7830FBAE23F0473381C22E79 /* /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms/test_main.cpp */,
+				23F5965F1C8F427797BD32B0 /* /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms/test_search.cpp */,
+				F97048AA4EE040B3BCC3CBE9 /* /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms/test_sort.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		526DB4D1DF5A4A5C8559087C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48135605EC9C4603B44BEE50 /* test_algorithms */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		840AE5DC5F3F41F9A35BD276 /* test_algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				1A96A860F5924ECCA2954C2A /* Source Files */,
+				F0990AABECA44A0F87933B93 /* /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms/CMakeLists.txt */,
+			);
+			name = test_algorithms;
+			sourceTree = "<group>";
+		};
+		9210B9DD9E5F4656AB33D103 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		CE8FD7A9290C4AFEAC171254 = {
+			isa = PBXGroup;
+			children = (
+				840AE5DC5F3F41F9A35BD276 /* test_algorithms */,
+				D3B654BF407E4DE3985A5377 /* ALL_BUILD */,
+				526DB4D1DF5A4A5C8559087C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3B654BF407E4DE3985A5377 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				9210B9DD9E5F4656AB33D103 /* CMake Rules */,
+				5AE988C267DA4B20BCBF5EAF /* /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4B195B062AE44E7A12640E3 /* test_algorithms */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 538C39B10D15485AB9A6D047 /* Build configuration list for PBXNativeTarget "test_algorithms" */;
+			buildPhases = (
+				F301B72C4E4A48CE89DAF345 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C92136A8F334F9C9A665EA6 /* PBXTargetDependency */,
+			);
+			name = test_algorithms;
+			productName = test_algorithms;
+			productReference = 48135605EC9C4603B44BEE50 /* test_algorithms */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		715221864D3A4B6797969E56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1010;
+			};
+			buildConfigurationList = 96E98E4192E941649D21F4C9 /* Build configuration list for PBXProject "dsa_test_algorithms" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				EC9A6EAC71944EE68C5ABCBA /* Debug */,
+				753B6F8339C644179099C2A0 /* Release */,
+				1087B49457FD4B74A45589F3 /* MinSizeRel */,
+				340D343BA3F74DC3A86375E8 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = CE8FD7A9290C4AFEAC171254;
+			projectDirPath = .;
+			projectRoot = "";
+			targets = (
+				A97E74921D33456CB0D37959 /* ALL_BUILD */,
+				C3CD5DF2FF1945509E4777BA /* ZERO_CHECK */,
+				06A357BD2DDD425BAF8DF478 /* install */,
+				E4B195B062AE44E7A12640E3 /* test_algorithms */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0144F32865AE4569AEA267DC = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		10F187FF553C432D99325FDF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		53B329DD9B964DA8A071A6D6 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms -f /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		58FE8BD8FECF4115B18D305C /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms -f /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		96AB5F4BD9B7470D9C8E0278 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		B4F976255A8A4A1991BFAC06 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms -f /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F301B72C4E4A48CE89DAF345 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A8EEA62EB3947D193AEBC9F /* /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms/test_graph.cpp */,
+				110A26E6A9954AD1A356F8F1 /* /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms/test_main.cpp */,
+				24613500FCEC4F66B81FE1DA /* /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms/test_search.cpp */,
+				504633A7DC104BA8B4878FBB /* /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms/test_sort.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F6E4E3D80704584A924ECC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4B195B062AE44E7A12640E3 /* test_algorithms */;
+			targetProxy = 3A743A2B3D9B413C83FA64C8 /* PBXContainerItemProxy */;
+		};
+		53C6773C5B704A93A2DF7FAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3CD5DF2FF1945509E4777BA /* ZERO_CHECK */;
+			targetProxy = EF1806EAEE074A89A661431F /* PBXContainerItemProxy */;
+		};
+		5C92136A8F334F9C9A665EA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3CD5DF2FF1945509E4777BA /* ZERO_CHECK */;
+			targetProxy = 6B0745B39D4F4F74905D9591 /* PBXContainerItemProxy */;
+		};
+		8330B77E727B494087611F57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A97E74921D33456CB0D37959 /* ALL_BUILD */;
+			targetProxy = B2B970FBECAD475A99579C9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0E2F97B249F74569BCB088F3 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,/Users/eugene/main/Bread/CS/practice/dsa/dsa);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++17 -Wall           -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/eugene/main/Bread/CS/practice/dsa/dsa/RelWithDebInfo/libdsa.a /usr/local/lib/libboost_system-mt.a /usr/local/lib/libboost_filesystem-mt.a /usr/local/lib/libboost_unit_test_framework-mt.a /usr/local/lib/libboost_graph-mt.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = test_algorithms;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		1E56BE6652B84E5982B60D34 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,/Users/eugene/main/Bread/CS/practice/dsa/dsa);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++17 -Wall        -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/eugene/main/Bread/CS/practice/dsa/dsa/MinSizeRel/libdsa.a /usr/local/lib/libboost_system-mt.a /usr/local/lib/libboost_filesystem-mt.a /usr/local/lib/libboost_unit_test_framework-mt.a /usr/local/lib/libboost_graph-mt.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = test_algorithms;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		24EC4127F6654C08B6FAB64E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		3FC0654F2CFC4FF5AF1A186F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms/build;
+			};
+			name = MinSizeRel;
+		};
+		41AFC2B3612849BEAE5FA3B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		503C0A2703BD4A6DAE05FF91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		62C4C089993A494EB5850C1D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		6F116625A13046E6877FB76B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms/build;
+			};
+			name = Release;
+		};
+		70673574995543978EF3CE1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		7854C5D29FEB4703880F23FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,/Users/eugene/main/Bread/CS/practice/dsa/dsa);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++17 -Wall        -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/eugene/main/Bread/CS/practice/dsa/dsa/Release/libdsa.a /usr/local/lib/libboost_system-mt.a /usr/local/lib/libboost_filesystem-mt.a /usr/local/lib/libboost_unit_test_framework-mt.a /usr/local/lib/libboost_graph-mt.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = test_algorithms;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		97326A2A754344408AA26DDC /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		97C2F061BD6144DEBA0BD579 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,/Users/eugene/main/Bread/CS/practice/dsa/dsa);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++17 -Wall        ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/eugene/main/Bread/CS/practice/dsa/dsa/Debug/libdsa.a /usr/local/lib/libboost_system-mt.a /usr/local/lib/libboost_filesystem-mt.a /usr/local/lib/libboost_unit_test_framework-mt.a /usr/local/lib/libboost_graph-mt.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = test_algorithms;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		9F80A0C233F74C309F4715F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		B00EE186C8934C8695B295CE /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms/build;
+			};
+			name = RelWithDebInfo;
+		};
+		C0B616D0A72D45369E92DF66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms/build;
+			};
+			name = Debug;
+		};
+		CA61CE64A01847E283BF5B3F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		DB2609D61EBD478CAE197583 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		DD1EC19FC86E42198C8DB322 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		EE52BC4E4BA846E397FB1EF2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		F2447908711C4365883C1453 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		538C39B10D15485AB9A6D047 /* Build configuration list for PBXNativeTarget "test_algorithms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97C2F061BD6144DEBA0BD579 /* Debug */,
+				7854C5D29FEB4703880F23FF /* Release */,
+				1E56BE6652B84E5982B60D34 /* MinSizeRel */,
+				0E2F97B249F74569BCB088F3 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		770C58DAB9A94830B1E1AC3F /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				503C0A2703BD4A6DAE05FF91 /* Debug */,
+				F2447908711C4365883C1453 /* Release */,
+				62C4C089993A494EB5850C1D /* MinSizeRel */,
+				DB2609D61EBD478CAE197583 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		96E98E4192E941649D21F4C9 /* Build configuration list for PBXProject "dsa_test_algorithms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0B616D0A72D45369E92DF66 /* Debug */,
+				6F116625A13046E6877FB76B /* Release */,
+				3FC0654F2CFC4FF5AF1A186F /* MinSizeRel */,
+				B00EE186C8934C8695B295CE /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B364B8A1A3C74A85AB42A4E9 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41AFC2B3612849BEAE5FA3B0 /* Debug */,
+				9F80A0C233F74C309F4715F0 /* Release */,
+				DD1EC19FC86E42198C8DB322 /* MinSizeRel */,
+				97326A2A754344408AA26DDC /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E2F102D6A758462BBA635C59 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70673574995543978EF3CE1B /* Debug */,
+				24EC4127F6654C08B6FAB64E /* Release */,
+				EE52BC4E4BA846E397FB1EF2 /* MinSizeRel */,
+				CA61CE64A01847E283BF5B3F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 715221864D3A4B6797969E56 /* Project object */;
+}

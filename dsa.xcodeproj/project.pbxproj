@@ -1,0 +1,897 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2EC79E81C8EE42AB81FA38A8 /* test_bst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5849F192CAB94631A70B8BBB /* test_bst.cpp */; };
+		38B00F0B67754CFAA81D7F66 /* test_queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6FB94479ACCC465187BBB7D8 /* test_queue.cpp */; };
+		4058622A2AE844429F7FA2A9 /* test_array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54BD8557086947C6B71F2B78 /* test_array.cpp */; };
+		4BD08981BADC44378753519B /* test_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60635B89EA3F4B04B556DEA4 /* test_main.cpp */; };
+		592D5EB1B2A04E499C9EC4CE /* test_search.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC9B042021354B44872097EF /* test_search.cpp */; };
+		748B110DF55B4AD7A3AA3690 /* dummy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07F9059C0683422ABA7C8FD7 /* dummy.cpp */; };
+		909187BF6E7346DFBEDF7120 /* test_sort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFB4D51143C149989BE76700 /* test_sort.cpp */; };
+		90FAD0EC2D3E4F78A0CA929C /* test_graph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07230BC00953480DA46804B4 /* test_graph.cpp */; };
+		B474E2BB8A264D1C859B3473 /* test_linked_list.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42355750D61342DEB7D237B9 /* test_linked_list.cpp */; };
+		BACFD78F3EB14D908FC0FA34 /* test_stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AB772CE2EB2463EA7FFDEBF /* test_stack.cpp */; };
+		CF1DB1E28090460AAA230EE1 /* test_vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D8F948A224F31BEA4A1D8 /* test_vector.cpp */; };
+		DC91D2AE8E6E42AB86111194 /* test_heap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3828AC8E8D75407EB3DACE9F /* test_heap.cpp */; };
+		F1C9F01B8D4F4ADBAA3A13FD /* test_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3934A67FF66549419EED1BB5 /* test_main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		51E86E2D3EAA4268A4A73D56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5A623CEE36547DCB7059692 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9E0170AEE4F414BBE9256EE;
+			remoteInfo = dsa;
+		};
+		B569EF5833384BACBD0AC7DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5A623CEE36547DCB7059692 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9E0170AEE4F414BBE9256EE;
+			remoteInfo = dsa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07230BC00953480DA46804B4 /* test_graph.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_graph.cpp; path = tests/algorithms/test_graph.cpp; sourceTree = SOURCE_ROOT; };
+		07F9059C0683422ABA7C8FD7 /* dummy.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dummy.cpp; path = dsa/data_structures/dummy.cpp; sourceTree = SOURCE_ROOT; };
+		0838B9784F7C42308631C52C /* graph.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = graph.hpp; path = dsa/algorithms/graph.hpp; sourceTree = SOURCE_ROOT; };
+		0AB772CE2EB2463EA7FFDEBF /* test_stack.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_stack.cpp; path = tests/data_structures/test_stack.cpp; sourceTree = SOURCE_ROOT; };
+		0BBFA113F31D479AAB2B5199 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = dsa/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		0F9876B4706B4A658B8E0D18 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = tests/algorithms/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		1018EBF3513F4141A939E5DB /* sort.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = sort.hpp; path = dsa/algorithms/sort.hpp; sourceTree = SOURCE_ROOT; };
+		3828AC8E8D75407EB3DACE9F /* test_heap.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_heap.cpp; path = tests/data_structures/test_heap.cpp; sourceTree = SOURCE_ROOT; };
+		3934A67FF66549419EED1BB5 /* test_main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_main.cpp; path = tests/data_structures/test_main.cpp; sourceTree = SOURCE_ROOT; };
+		3B3D8F948A224F31BEA4A1D8 /* test_vector.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_vector.cpp; path = tests/data_structures/test_vector.cpp; sourceTree = SOURCE_ROOT; };
+		42355750D61342DEB7D237B9 /* test_linked_list.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_linked_list.cpp; path = tests/data_structures/test_linked_list.cpp; sourceTree = SOURCE_ROOT; };
+		4724B29D6D8E45548048F8EB /* heap.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = heap.hpp; path = dsa/data_structures/heap.hpp; sourceTree = SOURCE_ROOT; };
+		4DAE3023D4BD449F80235BF0 /* all.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = all.hpp; path = dsa/algorithms/all.hpp; sourceTree = SOURCE_ROOT; };
+		54BD8557086947C6B71F2B78 /* test_array.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_array.cpp; path = tests/data_structures/test_array.cpp; sourceTree = SOURCE_ROOT; };
+		5849F192CAB94631A70B8BBB /* test_bst.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_bst.cpp; path = tests/data_structures/test_bst.cpp; sourceTree = SOURCE_ROOT; };
+		5DF95B86BFC847A49FC3BA43 /* stack.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = stack.hpp; path = dsa/data_structures/stack.hpp; sourceTree = SOURCE_ROOT; };
+		60635B89EA3F4B04B556DEA4 /* test_main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_main.cpp; path = tests/algorithms/test_main.cpp; sourceTree = SOURCE_ROOT; };
+		6FB94479ACCC465187BBB7D8 /* test_queue.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_queue.cpp; path = tests/data_structures/test_queue.cpp; sourceTree = SOURCE_ROOT; };
+		74FBDAE044254EE4972A3DAC /* binary_search_tree.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = binary_search_tree.hpp; path = dsa/data_structures/binary_search_tree.hpp; sourceTree = SOURCE_ROOT; };
+		7A56550A5A8C4AD48270D203 /* queue.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = queue.hpp; path = dsa/data_structures/queue.hpp; sourceTree = SOURCE_ROOT; };
+		7F13AB75A6804256B2D4EEBD /* libdsa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libdsa.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		86C01DE9E219409EAE99F047 /* array.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = array.hpp; path = dsa/data_structures/array.hpp; sourceTree = SOURCE_ROOT; };
+		A4145FF6AA2B4372BB2C1FF2 /* search.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = search.hpp; path = dsa/algorithms/search.hpp; sourceTree = SOURCE_ROOT; };
+		A629F21A72E04F7E8579F4C1 /* test_algorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = test_algorithms; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA431436351A42499287B6DF /* all.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = all.hpp; path = dsa/data_structures/all.hpp; sourceTree = SOURCE_ROOT; };
+		BD96F85CE76D483CA6ACA2FE /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = tests/data_structures/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		BFB4D51143C149989BE76700 /* test_sort.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_sort.cpp; path = tests/algorithms/test_sort.cpp; sourceTree = SOURCE_ROOT; };
+		C453B46DD9BE483AAD57A619 /* test_data_structures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = test_data_structures; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA7A7AC198774B069B241659 /* vector.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = vector.hpp; path = dsa/data_structures/vector.hpp; sourceTree = SOURCE_ROOT; };
+		DC9B042021354B44872097EF /* test_search.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_search.cpp; path = tests/algorithms/test_search.cpp; sourceTree = SOURCE_ROOT; };
+		F8034F37A39542E685970379 /* linked_list.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = linked_list.hpp; path = dsa/data_structures/linked_list.hpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1C9E0B3FBDD64441AADF855C /* test_data_structures */ = {
+			isa = PBXGroup;
+			children = (
+				8AC304434C3E438CAB4E0D4D /* Source Files */,
+				BD96F85CE76D483CA6ACA2FE /* CMakeLists.txt */,
+			);
+			name = test_data_structures;
+			sourceTree = "<group>";
+		};
+		1EB3809316454B0B8A598DBB /* dsa */ = {
+			isa = PBXGroup;
+			children = (
+				8AF0763258204030B1C74FE1 /* Header Files */,
+				24FD22E0BAE54BC09A732038 /* Source Files */,
+				0BBFA113F31D479AAB2B5199 /* CMakeLists.txt */,
+			);
+			name = dsa;
+			sourceTree = "<group>";
+		};
+		24FD22E0BAE54BC09A732038 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				07F9059C0683422ABA7C8FD7 /* dummy.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		253EB6DFDB8A4B3E8871AC4B /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				07230BC00953480DA46804B4 /* test_graph.cpp */,
+				60635B89EA3F4B04B556DEA4 /* test_main.cpp */,
+				DC9B042021354B44872097EF /* test_search.cpp */,
+				BFB4D51143C149989BE76700 /* test_sort.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		70D3F1703554455D8A4BDBB3 = {
+			isa = PBXGroup;
+			children = (
+				1EB3809316454B0B8A598DBB /* dsa */,
+				1C9E0B3FBDD64441AADF855C /* test_data_structures */,
+				FC57EFB4C724437E83AD50C1 /* test_algorithms */,
+				8F7BDB8F091F49B9AA7BBB0A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8AC304434C3E438CAB4E0D4D /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				54BD8557086947C6B71F2B78 /* test_array.cpp */,
+				5849F192CAB94631A70B8BBB /* test_bst.cpp */,
+				3828AC8E8D75407EB3DACE9F /* test_heap.cpp */,
+				42355750D61342DEB7D237B9 /* test_linked_list.cpp */,
+				3934A67FF66549419EED1BB5 /* test_main.cpp */,
+				6FB94479ACCC465187BBB7D8 /* test_queue.cpp */,
+				0AB772CE2EB2463EA7FFDEBF /* test_stack.cpp */,
+				3B3D8F948A224F31BEA4A1D8 /* test_vector.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		8AF0763258204030B1C74FE1 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DAE3023D4BD449F80235BF0 /* all.hpp */,
+				0838B9784F7C42308631C52C /* graph.hpp */,
+				A4145FF6AA2B4372BB2C1FF2 /* search.hpp */,
+				1018EBF3513F4141A939E5DB /* sort.hpp */,
+				BA431436351A42499287B6DF /* all.hpp */,
+				86C01DE9E219409EAE99F047 /* array.hpp */,
+				74FBDAE044254EE4972A3DAC /* binary_search_tree.hpp */,
+				4724B29D6D8E45548048F8EB /* heap.hpp */,
+				F8034F37A39542E685970379 /* linked_list.hpp */,
+				7A56550A5A8C4AD48270D203 /* queue.hpp */,
+				5DF95B86BFC847A49FC3BA43 /* stack.hpp */,
+				CA7A7AC198774B069B241659 /* vector.hpp */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		8F7BDB8F091F49B9AA7BBB0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F13AB75A6804256B2D4EEBD /* libdsa.a */,
+				C453B46DD9BE483AAD57A619 /* test_data_structures */,
+				A629F21A72E04F7E8579F4C1 /* test_algorithms */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC57EFB4C724437E83AD50C1 /* test_algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				253EB6DFDB8A4B3E8871AC4B /* Source Files */,
+				0F9876B4706B4A658B8E0D18 /* CMakeLists.txt */,
+			);
+			name = test_algorithms;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		91C096AEAB52447987B31F98 /* test_data_structures */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6645EAA0AA354161AE5358C2 /* Build configuration list for PBXNativeTarget "test_data_structures" */;
+			buildPhases = (
+				FD64B87DC6C4410D97E47578 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D51E6079D3C4D48BA7F253A /* PBXTargetDependency */,
+			);
+			name = test_data_structures;
+			productName = test_data_structures;
+			productReference = C453B46DD9BE483AAD57A619 /* test_data_structures */;
+			productType = "com.apple.product-type.tool";
+		};
+		C9E0170AEE4F414BBE9256EE /* dsa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E04F27F9660647D7B0DDB08B /* Build configuration list for PBXNativeTarget "dsa" */;
+			buildPhases = (
+				366BD96CB2C34F43828364C5 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dsa;
+			productName = dsa;
+			productReference = 7F13AB75A6804256B2D4EEBD /* libdsa.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E4B195B062AE44E7A12640E3 /* test_algorithms */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15FD8DFB9A454C7884B53994 /* Build configuration list for PBXNativeTarget "test_algorithms" */;
+			buildPhases = (
+				B95F9E26FBE241A6B69A478E /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				817F6A5D8E144806B45CC59F /* PBXTargetDependency */,
+			);
+			name = test_algorithms;
+			productName = test_algorithms;
+			productReference = A629F21A72E04F7E8579F4C1 /* test_algorithms */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5A623CEE36547DCB7059692 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1010;
+			};
+			buildConfigurationList = 9BA3A7C69B464ABA86208379 /* Build configuration list for PBXProject "dsa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 70D3F1703554455D8A4BDBB3;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9E0170AEE4F414BBE9256EE /* dsa */,
+				91C096AEAB52447987B31F98 /* test_data_structures */,
+				E4B195B062AE44E7A12640E3 /* test_algorithms */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		366BD96CB2C34F43828364C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				748B110DF55B4AD7A3AA3690 /* dummy.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B95F9E26FBE241A6B69A478E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90FAD0EC2D3E4F78A0CA929C /* test_graph.cpp in Sources */,
+				4BD08981BADC44378753519B /* test_main.cpp in Sources */,
+				592D5EB1B2A04E499C9EC4CE /* test_search.cpp in Sources */,
+				909187BF6E7346DFBEDF7120 /* test_sort.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD64B87DC6C4410D97E47578 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4058622A2AE844429F7FA2A9 /* test_array.cpp in Sources */,
+				2EC79E81C8EE42AB81FA38A8 /* test_bst.cpp in Sources */,
+				DC91D2AE8E6E42AB86111194 /* test_heap.cpp in Sources */,
+				B474E2BB8A264D1C859B3473 /* test_linked_list.cpp in Sources */,
+				F1C9F01B8D4F4ADBAA3A13FD /* test_main.cpp in Sources */,
+				38B00F0B67754CFAA81D7F66 /* test_queue.cpp in Sources */,
+				BACFD78F3EB14D908FC0FA34 /* test_stack.cpp in Sources */,
+				CF1DB1E28090460AAA230EE1 /* test_vector.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D51E6079D3C4D48BA7F253A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9E0170AEE4F414BBE9256EE /* dsa */;
+			targetProxy = B569EF5833384BACBD0AC7DF /* PBXContainerItemProxy */;
+		};
+		817F6A5D8E144806B45CC59F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9E0170AEE4F414BBE9256EE /* dsa */;
+			targetProxy = 51E86E2D3EAA4268A4A73D56 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08893007BE194779850C97ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/eugene/main/Bread/CS/practice/dsa/dsa,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++17",
+					"-Wall",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/eugene/main/Bread/CS/practice/dsa/dsa/Debug/libdsa.a,
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_unit_test_framework-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = test_algorithms;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		114AC478347F4824AC46A999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/eugene/main/Bread/CS/practice/dsa/dsa,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++17",
+					"-Wall",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = dsa;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/dsa;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		29A3508B22354815A26295F2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/eugene/main/Bread/CS/practice/dsa/dsa,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++17",
+					"-Wall",
+					"-DNDEBUG",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = dsa;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/dsa;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		2DAE23B818084CEA833CC5AB /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/build;
+			};
+			name = MinSizeRel;
+		};
+		4E4942DF6A974AD8916F93CA /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/eugene/main/Bread/CS/practice/dsa/dsa,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++17",
+					"-Wall",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/eugene/main/Bread/CS/practice/dsa/dsa/MinSizeRel/libdsa.a,
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_unit_test_framework-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = test_data_structures;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/tests/data_structures;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		50D1CFE162B64F14AEE38720 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/eugene/main/Bread/CS/practice/dsa/dsa,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++17",
+					"-Wall",
+					"-DNDEBUG",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = dsa;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/dsa;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		5E0587F224DA4DE096818EA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/build;
+			};
+			name = Debug;
+		};
+		754E0C1045FA47AE903D6B44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/eugene/main/Bread/CS/practice/dsa/dsa,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++17",
+					"-Wall",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/eugene/main/Bread/CS/practice/dsa/dsa/Release/libdsa.a,
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_unit_test_framework-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = test_algorithms;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		8A8227B7EAA74D64BE3066E5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/eugene/main/Bread/CS/practice/dsa/dsa,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++17",
+					"-Wall",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/eugene/main/Bread/CS/practice/dsa/dsa/MinSizeRel/libdsa.a,
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_unit_test_framework-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = test_algorithms;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		8A87396F603E4B23B3DD0A2D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/eugene/main/Bread/CS/practice/dsa/dsa,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++17",
+					"-Wall",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/eugene/main/Bread/CS/practice/dsa/dsa/RelWithDebInfo/libdsa.a,
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_unit_test_framework-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = test_data_structures;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/tests/data_structures;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		8DD38FD311BA48689D19DDBB /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/build;
+			};
+			name = RelWithDebInfo;
+		};
+		9F2CE248958D4D23B6E1BB1D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/eugene/main/Bread/CS/practice/dsa/dsa,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++17",
+					"-Wall",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/eugene/main/Bread/CS/practice/dsa/dsa/RelWithDebInfo/libdsa.a,
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_unit_test_framework-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = test_algorithms;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/tests/algorithms;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		AB81832D89EC44F0BC04E192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/build;
+			};
+			name = Release;
+		};
+		C07B860615AD4935BD905B72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/eugene/main/Bread/CS/practice/dsa/dsa,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++17",
+					"-Wall",
+					"-DNDEBUG",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = dsa;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/dsa;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		DCF7D5E83F8F428FB78EA8B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/eugene/main/Bread/CS/practice/dsa/dsa,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++17",
+					"-Wall",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/eugene/main/Bread/CS/practice/dsa/dsa/Debug/libdsa.a,
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_unit_test_framework-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = test_data_structures;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/tests/data_structures;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		F0627FA17C464669AC6C8C6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/eugene/main/Bread/CS/practice/dsa/dsa,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++17",
+					"-Wall",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/eugene/main/Bread/CS/practice/dsa/dsa/Release/libdsa.a,
+					"/usr/local/lib/libboost_system-mt.a",
+					"/usr/local/lib/libboost_filesystem-mt.a",
+					"/usr/local/lib/libboost_unit_test_framework-mt.a",
+					"/usr/local/lib/libboost_graph-mt.a",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = test_data_structures;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/eugene/main/Bread/CS/practice/dsa/tests/data_structures;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15FD8DFB9A454C7884B53994 /* Build configuration list for PBXNativeTarget "test_algorithms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08893007BE194779850C97ED /* Debug */,
+				754E0C1045FA47AE903D6B44 /* Release */,
+				8A8227B7EAA74D64BE3066E5 /* MinSizeRel */,
+				9F2CE248958D4D23B6E1BB1D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6645EAA0AA354161AE5358C2 /* Build configuration list for PBXNativeTarget "test_data_structures" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCF7D5E83F8F428FB78EA8B3 /* Debug */,
+				F0627FA17C464669AC6C8C6D /* Release */,
+				4E4942DF6A974AD8916F93CA /* MinSizeRel */,
+				8A87396F603E4B23B3DD0A2D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9BA3A7C69B464ABA86208379 /* Build configuration list for PBXProject "dsa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E0587F224DA4DE096818EA5 /* Debug */,
+				AB81832D89EC44F0BC04E192 /* Release */,
+				2DAE23B818084CEA833CC5AB /* MinSizeRel */,
+				8DD38FD311BA48689D19DDBB /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E04F27F9660647D7B0DDB08B /* Build configuration list for PBXNativeTarget "dsa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				114AC478347F4824AC46A999 /* Debug */,
+				C07B860615AD4935BD905B72 /* Release */,
+				29A3508B22354815A26295F2 /* MinSizeRel */,
+				50D1CFE162B64F14AEE38720 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D5A623CEE36547DCB7059692 /* Project object */;
+}
