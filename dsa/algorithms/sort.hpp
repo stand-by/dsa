@@ -167,6 +167,49 @@ namespace dsa
                 ++begin;
             }
         }
+        
+        namespace detail
+        {
+            template <typename I>
+            auto middle_partition(I begin, I end)
+            {
+                auto pivot = *(begin + std::distance(begin, end)/2);
+                auto last = end-1;
+                
+                while(begin <= last)
+                {
+                    while(*begin < pivot)
+                        ++begin;
+                    while(*last > pivot)
+                        --last;
+                    
+                    if(begin == last)
+                        --last;
+                    
+                    if(begin < last)
+                    {
+                        std::swap(*begin, *last);
+                        ++begin;
+                        --last;
+                    }
+                }
+                
+                return begin;
+            }
+        }
+        template <typename I>
+        void quick_sort(I begin, I end)
+        {
+            using it_cat = typename std::iterator_traits<I>::iterator_category;
+            static_assert(std::is_base_of<std::random_access_iterator_tag, it_cat>::value,
+                          "quick_sort accepts random access iterator");
+            
+            auto partition_it = detail::middle_partition(begin, end);
+            if(begin < partition_it-1)
+                quick_sort(begin, partition_it);
+            if(partition_it < end-1)
+                quick_sort(partition_it, end);
+        }
 
     }
 

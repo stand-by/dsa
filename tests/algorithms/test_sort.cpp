@@ -75,6 +75,10 @@ BOOST_AUTO_TEST_CASE(random_access_iterator_sorts)
             [](auto begin, auto end){ algos::merge_sort(begin, end); }
     );
 
+    sort_test<false>(
+             [](auto begin, auto end){ algos::quick_sort(begin, end); }
+    );
+    
     sort_test(
             [](auto begin, auto end){ algos::heap_sort(begin, end); }
     );
