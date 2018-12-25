@@ -17,7 +17,7 @@ namespace dsa
             
             priority_queue() = default;
             
-            template <typename I>
+            template<typename I>
             priority_queue(I begin, I end) : max_heap_{ build_max_heap(begin, end) } {}
             
             bool empty() const

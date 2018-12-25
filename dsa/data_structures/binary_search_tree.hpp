@@ -152,7 +152,7 @@ namespace dsa
                 return max_node->data_;
             }
         
-            bool contain(const value_type& val) const
+            bool contains(const value_type& val) const
             {
                 auto [runner,_] = find_node(this->root_, val);
                 return runner != nullptr;

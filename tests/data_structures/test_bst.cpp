@@ -21,9 +21,9 @@ BOOST_AUTO_TEST_CASE(use_case)
     BOOST_CHECK(bst.max() == 10);
     BOOST_CHECK(bst.min() == 10);
     
-    BOOST_CHECK(!bst_empty.contain(10));
-    BOOST_CHECK(bst.contain(10));
-    BOOST_CHECK(!bst.contain(11));
+    BOOST_CHECK(!bst_empty.contains(10));
+    BOOST_CHECK(bst.contains(10));
+    BOOST_CHECK(!bst.contains(11));
     
     BOOST_CHECK(bst.height() == 1);
     BOOST_CHECK(bst_empty.height() == 0);
@@ -45,17 +45,17 @@ BOOST_AUTO_TEST_CASE(use_case)
     BOOST_CHECK(bst.max() == 20);
     BOOST_CHECK(bst.min() == 2);
     
-    BOOST_CHECK(bst.contain(2));
-    BOOST_CHECK(bst.contain(4));
-    BOOST_CHECK(bst.contain(7));
-    BOOST_CHECK(bst.contain(10));
-    BOOST_CHECK(bst.contain(15));
-    BOOST_CHECK(bst.contain(20));
-    BOOST_CHECK(bst.contain(13));
-    BOOST_CHECK(bst.contain(14));
-    BOOST_CHECK(!bst.contain(1));
-    BOOST_CHECK(!bst.contain(0));
-    BOOST_CHECK(!bst.contain(21));
+    BOOST_CHECK(bst.contains(2));
+    BOOST_CHECK(bst.contains(4));
+    BOOST_CHECK(bst.contains(7));
+    BOOST_CHECK(bst.contains(10));
+    BOOST_CHECK(bst.contains(15));
+    BOOST_CHECK(bst.contains(20));
+    BOOST_CHECK(bst.contains(13));
+    BOOST_CHECK(bst.contains(14));
+    BOOST_CHECK(!bst.contains(1));
+    BOOST_CHECK(!bst.contains(0));
+    BOOST_CHECK(!bst.contains(21));
 
     BOOST_CHECK(bst != bst_copy);
     bst_copy = bst;
@@ -64,29 +64,29 @@ BOOST_AUTO_TEST_CASE(use_case)
     BOOST_CHECK(bst.size() == bst_copy.size());
     
     bst_copy.remove(2);
-    BOOST_CHECK(!bst_copy.contain(2));
+    BOOST_CHECK(!bst_copy.contains(2));
     bst_copy.remove(4);
-    BOOST_CHECK(!bst_copy.contain(4));
-    BOOST_CHECK(bst_copy.contain(3));
+    BOOST_CHECK(!bst_copy.contains(4));
+    BOOST_CHECK(bst_copy.contains(3));
     
     bst_copy.remove(15);
-    BOOST_CHECK(!bst_copy.contain(15));
-    BOOST_CHECK(bst_copy.contain(20));
-    BOOST_CHECK(bst_copy.contain(14));
+    BOOST_CHECK(!bst_copy.contains(15));
+    BOOST_CHECK(bst_copy.contains(20));
+    BOOST_CHECK(bst_copy.contains(14));
 
     bst_copy.remove(10);
-    BOOST_CHECK(!bst_copy.contain(10));
+    BOOST_CHECK(!bst_copy.contains(10));
     
-    BOOST_CHECK(bst_copy.contain(20));
-    BOOST_CHECK(bst_copy.contain(14));
-    BOOST_CHECK(bst_copy.contain(13));
-    BOOST_CHECK(bst_copy.contain(11));
-    BOOST_CHECK(bst_copy.contain(5));
-    BOOST_CHECK(bst_copy.contain(7));
-    BOOST_CHECK(bst_copy.contain(3));
-    BOOST_CHECK(!bst_copy.contain(1));
-    BOOST_CHECK(!bst_copy.contain(0));
-    BOOST_CHECK(!bst_copy.contain(21));
+    BOOST_CHECK(bst_copy.contains(20));
+    BOOST_CHECK(bst_copy.contains(14));
+    BOOST_CHECK(bst_copy.contains(13));
+    BOOST_CHECK(bst_copy.contains(11));
+    BOOST_CHECK(bst_copy.contains(5));
+    BOOST_CHECK(bst_copy.contains(7));
+    BOOST_CHECK(bst_copy.contains(3));
+    BOOST_CHECK(!bst_copy.contains(1));
+    BOOST_CHECK(!bst_copy.contains(0));
+    BOOST_CHECK(!bst_copy.contains(21));
     
     BOOST_CHECK(!bst_copy.empty());
     BOOST_CHECK(bst_copy.max() == 20);
@@ -98,8 +98,8 @@ BOOST_AUTO_TEST_CASE(use_case)
     bst_empty.add(42);
     BOOST_CHECK(bst_empty.height() == 1);
     BOOST_CHECK(bst_empty.size() == 1);
-    BOOST_CHECK(bst_empty.contain(42));
-    BOOST_CHECK(!bst_empty.contain(1));
+    BOOST_CHECK(bst_empty.contains(42));
+    BOOST_CHECK(!bst_empty.contains(1));
     bst_empty.remove(42);
     BOOST_CHECK(bst_empty.empty());
 }
