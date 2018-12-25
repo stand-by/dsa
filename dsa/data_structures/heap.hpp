@@ -50,12 +50,8 @@ namespace dsa
                 return arr_.size();
             }
 
-            T top() const {
-                utils::expect(!empty(), "Cannot obtain top element of empty heap");
-                return arr_.front();
-            }
-
-            T& top() {
+            T top() const
+            {
                 utils::expect(!empty(), "Cannot obtain top element of empty heap");
                 return arr_.front();
             }

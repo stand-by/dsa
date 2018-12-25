@@ -21,8 +21,7 @@ BOOST_AUTO_TEST_CASE(use_case)
     BOOST_CHECK(min_h == min_h_copy);
 
     BOOST_CHECK(min_h_copy.top() == 0);
-    min_h_copy.top() = 1;
-    BOOST_CHECK(min_h_copy.top() == 1);
+    min_h_copy.add(1);
     BOOST_CHECK(min_h != min_h_copy);
 
     BOOST_CHECK(min_h.top() == 0);
