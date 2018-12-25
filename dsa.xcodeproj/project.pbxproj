@@ -10,6 +10,7 @@
 		2EC79E81C8EE42AB81FA38A8 /* test_bst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5849F192CAB94631A70B8BBB /* test_bst.cpp */; };
 		38B00F0B67754CFAA81D7F66 /* test_queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6FB94479ACCC465187BBB7D8 /* test_queue.cpp */; };
 		4058622A2AE844429F7FA2A9 /* test_array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54BD8557086947C6B71F2B78 /* test_array.cpp */; };
+		44FAE5AC21BC0006004F666D /* test_hash_table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44FAE5AB21BC0006004F666D /* test_hash_table.cpp */; };
 		4BD08981BADC44378753519B /* test_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60635B89EA3F4B04B556DEA4 /* test_main.cpp */; };
 		592D5EB1B2A04E499C9EC4CE /* test_search.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC9B042021354B44872097EF /* test_search.cpp */; };
 		748B110DF55B4AD7A3AA3690 /* dummy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07F9059C0683422ABA7C8FD7 /* dummy.cpp */; };
@@ -51,6 +52,8 @@
 		3934A67FF66549419EED1BB5 /* test_main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_main.cpp; path = tests/data_structures/test_main.cpp; sourceTree = SOURCE_ROOT; };
 		3B3D8F948A224F31BEA4A1D8 /* test_vector.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_vector.cpp; path = tests/data_structures/test_vector.cpp; sourceTree = SOURCE_ROOT; };
 		42355750D61342DEB7D237B9 /* test_linked_list.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_linked_list.cpp; path = tests/data_structures/test_linked_list.cpp; sourceTree = SOURCE_ROOT; };
+		44FAE5AA21BBFFA2004F666D /* hash_table.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; name = hash_table.hpp; path = dsa/data_structures/hash_table.hpp; sourceTree = "<group>"; };
+		44FAE5AB21BC0006004F666D /* test_hash_table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = test_hash_table.cpp; path = tests/data_structures/test_hash_table.cpp; sourceTree = "<group>"; };
 		4724B29D6D8E45548048F8EB /* heap.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = heap.hpp; path = dsa/data_structures/heap.hpp; sourceTree = SOURCE_ROOT; };
 		4DAE3023D4BD449F80235BF0 /* all.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = all.hpp; path = dsa/algorithms/all.hpp; sourceTree = SOURCE_ROOT; };
 		54BD8557086947C6B71F2B78 /* test_array.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_array.cpp; path = tests/data_structures/test_array.cpp; sourceTree = SOURCE_ROOT; };
@@ -133,6 +136,7 @@
 				6FB94479ACCC465187BBB7D8 /* test_queue.cpp */,
 				0AB772CE2EB2463EA7FFDEBF /* test_stack.cpp */,
 				3B3D8F948A224F31BEA4A1D8 /* test_vector.cpp */,
+				44FAE5AB21BC0006004F666D /* test_hash_table.cpp */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
@@ -152,6 +156,7 @@
 				7A56550A5A8C4AD48270D203 /* queue.hpp */,
 				5DF95B86BFC847A49FC3BA43 /* stack.hpp */,
 				CA7A7AC198774B069B241659 /* vector.hpp */,
+				44FAE5AA21BBFFA2004F666D /* hash_table.hpp */,
 			);
 			name = "Header Files";
 			sourceTree = "<group>";
@@ -278,6 +283,7 @@
 			files = (
 				4058622A2AE844429F7FA2A9 /* test_array.cpp in Sources */,
 				2EC79E81C8EE42AB81FA38A8 /* test_bst.cpp in Sources */,
+				44FAE5AC21BC0006004F666D /* test_hash_table.cpp in Sources */,
 				DC91D2AE8E6E42AB86111194 /* test_heap.cpp in Sources */,
 				B474E2BB8A264D1C859B3473 /* test_linked_list.cpp in Sources */,
 				F1C9F01B8D4F4ADBAA3A13FD /* test_main.cpp in Sources */,
